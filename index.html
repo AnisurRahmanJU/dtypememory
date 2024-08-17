@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataType Memory Allocation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">DataType Memory Allocation</h1>
+        <h6 class="text-center mt-4">Drag and drop DataType button in Memory Layout</h6> <!-- New heading added -->
+        <div class="form-group text-center mt-3">
+            <button id="generateMemorySize" class="btn btn-primary">Generate Random Memory Size</button>
+            <span id="memorySizeDisplay" class="ml-2">Memory Size: 0 bytes</span>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <h3>Data Types</h3>
+                <div id="dataTypes" class="list-group">
+                    <div class="list-group-item draggable" data-type="int" data-size="4" draggable="true">Int</div>
+                    <div class="list-group-item draggable" data-type="float" data-size="4" draggable="true">Float</div>
+                    <div class="list-group-item draggable" data-type="char" data-size="1" draggable="true">Char</div>
+                    <div class="list-group-item draggable" data-type="string" data-size="1" draggable="true">String (1 char)</div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h3>Memory Layout</h3>
+                <div id="memoryLayout" class="memory-grid">
+                    <!-- Memory grid will be populated here -->
+                </div>
+            </div>
+        </div>
+        <button id="clearLayout" class="btn btn-danger mt-3">Clear Layout</button>
+        <span id="statusMessage" class="mt-3"></span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
